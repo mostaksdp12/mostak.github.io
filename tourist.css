@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  padding: 10px;
+  font-family: Sans-Serif;
+  background: #c5cdce;
+}
+.header {
+  background: #fff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px 5px 0 0;
+}
+.topnav {
+  background: #252b2d;
+  overflow: hidden;
+}
+.topnav a{
+  text-decoration: none;
+  color: #fff;
+  padding: 14px 16px;
+  float: left;
+  display: block;text-align: center;
+  transition: 0.5s;
+}
+.topnav a:hover {
+  background: #f1f1f1;
+  color: #000;t
+}
+.leftcol {
+  width: 65%;
+  float: left;
+  
+}
+.card {
+  background: #fff;
+  padding: 20px;
+  margin-top: 20px;
+}
+.image {
+  height: 200px;
+  background: #ddd;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+.rightcol {
+  float: left;
+  width: 35%;
+  padding-left: 20px;
+}
+.row:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.footer {
+  margin-top: 20px;
+  background: #fff;
+  padding: 20px;
+  text-align: center;
+}
+@media screen and (max-width:600px) {
+  .topnav a {
+    float:none;
+    width: 100%;
+  }
+  .header {
+    padding: 10px;
+  }
+  .header h1{
+    font-size: 15px;
+  }
+  .header p {
+    font-size: 10px;
+  }
+  .leftcol, .rightcol {
+    width: 100%;
+  }
+  .rightcol {
+    padding: 0;
+  }
+  body {
+    padding: 5px;
+  }
+  .card {
+    margin-top: 10px;
+  }
+}
